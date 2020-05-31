@@ -113,7 +113,7 @@ function updateToolTip(chosenXAxis,chosenYAxis, circlesGroup) {
     .offset([80, -60])
     .html(function(d) {
       if (chosenXAxis === "income"){
-        return (`${d.state},${d.abbr}<br>${chosenXAxis}: ${d[chosenXAxis]} USD<br>${chosenYAxis}: ${d[chosenYAxis]}%`); 
+        return (`${d.state},${d.abbr}<br>${chosenXAxis}: ${d[chosenXAxis]} <br>${chosenYAxis}: ${d[chosenYAxis]}%`); 
     
       } else if (chosenXAxis === "age"){
         return (`${d.state},${d.abbr}<br>${chosenXAxis}: ${d[chosenXAxis]}<br>${chosenYAxis}: ${d[chosenYAxis]}%`); 
